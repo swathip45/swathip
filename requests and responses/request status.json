@@ -1,0 +1,45 @@
+[
+ { 
+   "category":"watches",
+    "products":[
+   {
+   "company name":"fastrack",
+   "price":2000,
+   "color":"black",
+   "display type":"analog",
+   "warranty":"1 year",
+   "cash on delivery":"available"
+   },
+   {
+   "company name":"fossil",
+   "price":11000,
+   "color":"silver",
+   "display type":"analog",
+   "warranty":"2 year",
+   "cash on delivery":"available"
+   }
+   ]
+ },
+ { 
+   "category":"sun glasses",
+   "products":[
+   {
+   "company name":"elegant",
+   "price":400,
+   "color":"black",
+   "shape":"round",
+   "type":"uv protected oval glasses",
+   "cash on delivery":"available"
+   },
+   {
+    "company name":"imperial club",
+   "price":500,
+   "color":"brown",
+   "shape":"round",
+   "type":"uv protected oval glasses",
+   "cash on delivery":"not available"
+   }
+   ]
+  
+ }
+]
