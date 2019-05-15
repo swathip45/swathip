@@ -1,0 +1,94 @@
+#%RAML 1.0
+baseUri: https://anypoint.mulesoft.com/mocking/api/v1/links/a447c042-4337-4a8f-8634-90ee9a87e63b/ # 
+title: insurance policies
+/policy_holders:
+  /{policy type}:
+    get:
+      queryParameters:
+        policyholdername:
+        plantype:
+         required: true
+      responses:
+        200:
+          body:
+           application/json:
+            example:
+             [
+              {
+                "policy holder name":"sangeetha",
+                "policy type":"lic e term insurence",
+                "age":"35 years",
+                "plan type":"pure term plan",
+                "minimum premium":"1lakh"
+              },
+              {
+                "policy holder name":"raju",
+                "policy type":"lic e term insurence",
+                "age":"25 years",
+                "plan type":"endowment plan",
+               "minimum premium":"3lakh" 
+             }
+           ]
+  put:
+   body:
+    application/json:
+     example:
+       {
+         "policy holder name":"raju",
+         "policy type":"lic e term insurence",
+         "age":"25 years",
+         "plan type":"endowment plan",
+         "minimum premium":"3lakh" 
+       }
+   responses:
+    200:
+      body:
+       application/json:
+        example:
+         {
+           "policy holder name":"ramesh",
+           "policy type":"lic jeevan anand",
+           "age":"40 years",
+           "plan type":"money back plan",
+           "minimum premium":"5lakh" 
+         }
+  post:
+   body:
+    application/json:
+     example:
+      {
+        "policy holder name":"lavanya",
+        "policy type":"lic jeevan saral",
+        "age":"50 years",
+        "plan type":"pension plan",
+        "minimum premium":"2lakh" 
+      }
+   responses:
+    201:
+     body:
+      application/json:
+       example:
+        {"message":"new policy has been added"}
+  delete:
+   body:
+    application/json:
+      example:
+       {
+        "policy holder name":"lavanya",
+        "policy type":"lic jeevan saral",
+        "age":"50 years",
+        "plan type":"pension plan",
+        "minimum premium":"2lakh" 
+      }
+   responses:
+    200:
+     body:
+      application/json:
+       example:
+        {"message":"details has been deleted"}
+
+       
+
+    
+    
+
